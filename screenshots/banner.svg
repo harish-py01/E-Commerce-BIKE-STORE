@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+    <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#111827"/>
+            <stop offset="100%" stop-color="#1f2937"/>
+        </linearGradient>
+        <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ef4444"/>
+            <stop offset="100%" stop-color="#dc2626"/>
+        </linearGradient>
+    </defs>
+    <rect width="1200" height="400" fill="url(#bg)"/>
+    <path d="M 0 400 L 400 0 L 500 0 L 100 400 Z" fill="url(#accent)" opacity="0.1"/>
+    <path d="M 100 400 L 500 0 L 550 0 L 150 400 Z" fill="url(#accent)" opacity="0.2"/>
+    <path d="M 200 400 L 600 0 L 620 0 L 220 400 Z" fill="url(#accent)" opacity="0.3"/>
+    <text x="600" y="190" font-family="'Segoe UI', Roboto, sans-serif" font-size="72" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="4">BIKE STORE</text>
+    <text x="600" y="240" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="300" fill="#9ca3af" text-anchor="middle" letter-spacing="8">MODERN E-COMMERCE PLATFORM</text>
+    <rect x="550" y="280" width="100" height="4" fill="url(#accent)" rx="2"/>
+</svg>

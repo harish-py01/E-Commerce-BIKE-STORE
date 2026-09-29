@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+    <rect width="900" height="700" fill="#0d1117" />
+    <style>
+        .title { fill: #fff; font-family: sans-serif; font-size: 16px; font-weight: bold; }
+        .col { fill: #c9d1d9; font-family: sans-serif; font-size: 14px; }
+        .pk { fill: #e3b341; font-weight: bold; }
+        .fk { fill: #8957e5; font-style: italic; }
+        .box { fill: #161b22; stroke: #30363d; stroke-width: 2; rx: 6; }
+        .header { fill: #21262d; rx: 6; }
+    </style>
+    <rect x="50" y="50" width="200" height="150" class="box" />
+    <rect x="50" y="50" width="200" height="30" class="header" />
+    <text x="150" y="70" text-anchor="middle" class="title">customers</text>
+    <text x="60" y="100" class="col pk">PK id (INT)</text>
+    <text x="60" y="120" class="col">name (VARCHAR)</text>
+    <text x="60" y="140" class="col">email (VARCHAR)</text>
+    <text x="60" y="160" class="col">password (VARCHAR)</text>
+    
+    <rect x="50" y="300" width="200" height="150" class="box" />
+    <rect x="50" y="300" width="200" height="30" class="header" />
+    <text x="150" y="320" text-anchor="middle" class="title">orders</text>
+    <text x="60" y="350" class="col pk">PK id (INT)</text>
+    <text x="60" y="370" class="col fk">FK customer_id</text>
+    <text x="60" y="390" class="col">order_number</text>
+    
+    <rect x="350" y="300" width="200" height="150" class="box" />
+    <rect x="350" y="300" width="200" height="30" class="header" />
+    <text x="450" y="320" text-anchor="middle" class="title">order_items</text>
+    <text x="360" y="350" class="col pk">PK id (INT)</text>
+    <text x="360" y="370" class="col fk">FK order_id</text>
+    <text x="360" y="390" class="col fk">FK product_id</text>
+
+    <rect x="650" y="300" width="200" height="200" class="box" />
+    <rect x="650" y="300" width="200" height="30" class="header" />
+    <text x="750" y="320" text-anchor="middle" class="title">products</text>
+    <text x="660" y="350" class="col pk">PK id (INT)</text>
+    <text x="660" y="370" class="col fk">FK category_id</text>
+    <text x="660" y="390" class="col fk">FK brand_id</text>
+
+    <rect x="500" y="50" width="180" height="120" class="box" />
+    <rect x="500" y="50" width="180" height="30" class="header" />
+    <text x="590" y="70" text-anchor="middle" class="title">categories</text>
+    <text x="510" y="100" class="col pk">PK id (INT)</text>
+    <text x="510" y="120" class="col">name (VARCHAR)</text>
+
+    <rect x="700" y="50" width="180" height="120" class="box" />
+    <rect x="700" y="50" width="180" height="30" class="header" />
+    <text x="790" y="70" text-anchor="middle" class="title">brands</text>
+    <text x="710" y="100" class="col pk">PK id (INT)</text>
+
+    <rect x="350" y="500" width="200" height="120" class="box" />
+    <rect x="350" y="500" width="200" height="30" class="header" />
+    <text x="450" y="520" text-anchor="middle" class="title">cart</text>
+    <text x="360" y="550" class="col pk">PK id (INT)</text>
+    <text x="360" y="570" class="col fk">FK product_id</text>
+</svg>
